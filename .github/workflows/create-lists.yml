@@ -1,0 +1,55 @@
+name: Create lists
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - .github/workflows/create-lists.yml
+      - src/**
+      - src/convert.py
+  workflow_dispatch:  # Позволяет запускать вручную через GitHub UI
+  schedule:
+    - cron: '17 0 */3 * *'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-lists:
+    runs-on: ubuntu-24.04  # Используем Ubuntu как среду выполнения
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.1.4  # Скачиваем код репозитория
+
+      - name: Set up Python
+        uses: actions/setup-python@v5.1.0
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install tldextract  # Устанавливаем зависимости
+
+      - name: Run script
+        run: python src/convert.py  # Запускаем скрипт
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: processed-domains  # Имя артефакта
+          path: |
+            all_domains.lst
+            dnsmasq-nfset.lst  # Пути к файлам, которые нужно загрузить
+
+      - name: Push lists
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: |
+            all_domains.lst
+            dnsmasq-nfset.lst
+          author_name: GitHub Action
+          author_email: githubaction@githubaction.com
+          message: 'Update lists'
+          push: true
