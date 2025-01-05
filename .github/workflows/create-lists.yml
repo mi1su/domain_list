@@ -43,6 +43,11 @@ jobs:
             all_domains.lst
             dnsmasq-nfset.lst  # Пути к файлам, которые нужно загрузить
 
+      - name: Update date variable
+        id: get_date
+        run: |
+          echo "date=$(date -u +'%d-%m-%Y %H:%M:%S UTC')" >> $GITHUB_OUTPUT
+
       - name: Push lists
         uses: EndBug/add-and-commit@v9
         with:
@@ -51,5 +56,6 @@ jobs:
             dnsmasq-nfset.lst
           author_name: GitHub Action
           author_email: githubaction@githubaction.com
-          message: 'Update lists'
+          message: |
+            Update list domain: ${{ steps.get_date.outputs.date }}
           push: true
