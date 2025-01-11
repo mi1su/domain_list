@@ -1,4 +1,4 @@
-name: Create lists
+name: Create lists domains
 
 on:
   push:
@@ -27,26 +27,51 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install dependencies
+      - name: Install dependencies # Устанавливаем зависимости
         run: |
           python -m pip install --upgrade pip
-          pip install tldextract  # Устанавливаем зависимости
+          pip install tldextract
 
       - name: Run script
         run: python src/convert.py  # Запускаем скрипт
 
-      - name: Upload results
-        uses: actions/upload-artifact@v4
-        with:
-          name: processed-domains  # Имя артефакта
-          path: |
-            all_domains.lst
-            dnsmasq-nfset.lst  # Пути к файлам, которые нужно загрузить
-
       - name: Update date variable
         id: get_date
         run: |
-          echo "date=$(date -u +'%d-%m-%Y %H:%M:%S UTC')" >> $GITHUB_OUTPUT
+          echo "date=$(date -u +'%d-%m-%Y %H:%M UTC')" >> $GITHUB_OUTPUT
+          
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.get_date.outputs.date }} # Используем дату как часть тега
+          release_name: Release ${{ steps.get_date.outputs.date }}
+          draft: false # Публикуем релиз сразу
+          prerelease: false
+          body: |
+            Актуальные списки доменов на ${{ steps.get_date.outputs.date }}.
+
+      - name: Upload Release Assets
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./all_domains.lst
+          asset_name: all_domains.lst
+          asset_content_type: text/plain
+
+      - name: Upload Release Assets dnsmasq
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./dnsmasq-nfset.lst
+          asset_name: dnsmasq-nfset.lst
+          asset_content_type: text/plain
 
       - name: Push lists
         uses: EndBug/add-and-commit@v9
