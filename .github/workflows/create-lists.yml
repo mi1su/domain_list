@@ -14,7 +14,6 @@ on:
 permissions:
   contents: write
   # Добавляем разрешение на создание релизов
-  releases: write
 
 jobs:
   generate-lists:
@@ -22,10 +21,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4.1.4  # Скачиваем код репозитория
+        uses: actions/checkout@v4.2.2  # Скачиваем код репозитория
 
       - name: Set up Python
-        uses: actions/setup-python@v5.1.0
+        uses: actions/setup-python@v5.3.0
         with:
           python-version: '3.12'
 
@@ -40,23 +39,35 @@ jobs:
       - name: Update date variable
         id: get_date
         run: |
-          echo "date=$(date -u +'%d-%m-%Y %H:%M UTC')" >> $GITHUB_OUTPUT
+          # Define the date (UTC)
+          CURRENT_DATE=$(date -u +'%d-%m-%Y %H:%M UTC')
+          CURRENT_TAG=$(date -u +'%d%m%YT%H%MZ')
+
+          # Output
+          # echo "CURRENT_DATE=$CURRENT_DATE" >> $GITHUB_OUTPUT
+          # echo "CURRENT_TAG=v$CURRENT_TAG" >> $GITHUB_OUTPUT
+
+          # Export as environment variables
+          echo "CURRENT_DATE=$CURRENT_DATE" >> $GITHUB_ENV
+          echo "CURRENT_TAG=$CURRENT_TAG" >> $GITHUB_ENV
           
       - name: Create Release
         id: create_release
-        uses: actions/create-release@v1
+        uses: actions/create-release@v1.1.4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v${{ steps.get_date.outputs.date }} # Используем дату как часть тега
-          release_name: Release ${{ steps.get_date.outputs.date }}
+          # tag_name: v${{ steps.get_date.outputs.CURRENT_TAG }}
+          tag_name: "v${{ env.CURRENT_TAG }}"
+          # release_name: Release ${{ steps.get_date.outputs.CURRENT_DATE }}
+          release_name: "Release ${{ env.CURRENT_DATE }}"
           draft: false # Публикуем релиз сразу
           prerelease: false
           body: |
-            Актуальные списки доменов на ${{ steps.get_date.outputs.date }}.
+            Актуальные списки доменов на ${{ env.CURRENT_DATE }}.
 
       - name: Upload Release Assets
-        uses: actions/upload-release-asset@v1
+        uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -66,7 +77,7 @@ jobs:
           asset_content_type: text/plain
 
       - name: Upload Release Assets dnsmasq
-        uses: actions/upload-release-asset@v1
+        uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -76,13 +87,12 @@ jobs:
           asset_content_type: text/plain
 
       - name: Push lists
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v9.1.4
         with:
           add: |
             all_domains.lst
             dnsmasq-nfset.lst
           author_name: GitHub Action
           author_email: githubaction@githubaction.com
-          message: |
-            Update list domain: ${{ steps.get_date.outputs.date }}
+          message: "Update list domain: ${{ env.CURRENT_DATE }}"
           push: true
