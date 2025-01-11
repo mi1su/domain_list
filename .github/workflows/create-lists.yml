@@ -1,4 +1,4 @@
-name: Create lists
+name: Create lists domains
 
 on:
   push:
@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  # Добавляем разрешение на создание релизов
 
 jobs:
   generate-lists:
@@ -20,42 +21,51 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4.1.4  # Скачиваем код репозитория
+        uses: actions/checkout@v4.2.2  # Скачиваем код репозитория
 
       - name: Set up Python
-        uses: actions/setup-python@v5.1.0
+        uses: actions/setup-python@v5.3.0
         with:
           python-version: '3.12'
 
-      - name: Install dependencies
+      - name: Install dependencies # Устанавливаем зависимости
         run: |
           python -m pip install --upgrade pip
-          pip install tldextract  # Устанавливаем зависимости
+          pip install tldextract
 
       - name: Run script
         run: python src/convert.py  # Запускаем скрипт
 
-      - name: Upload results
-        uses: actions/upload-artifact@v4
-        with:
-          name: processed-domains  # Имя артефакта
-          path: |
-            all_domains.lst
-            dnsmasq-nfset.lst  # Пути к файлам, которые нужно загрузить
-
       - name: Update date variable
         id: get_date
         run: |
-          echo "date=$(date -u +'%d-%m-%Y %H:%M:%S UTC')" >> $GITHUB_OUTPUT
+          # Define the date (UTC)
+          CURRENT_DATE=$(date -u +'%d-%m-%Y %H:%M UTC')
+          CURRENT_TAG=$(date -u +'%d%m%YT%H%MZ')
+
+          # Export as environment variables
+          echo "CURRENT_DATE=$CURRENT_DATE" >> $GITHUB_ENV
+          echo "CURRENT_TAG=$CURRENT_TAG" >> $GITHUB_ENV
+
+      - name: Create Pre-release with gh CLI
+        run: |
+          gh release create "v${{ env.CURRENT_TAG }}" \
+            ./all_domains.lst \
+            ./dnsmasq-nfset.lst \
+            --title "Release ${{ env.CURRENT_DATE }}" \
+            --notes "Актуальные списки доменов на ${{ env.CURRENT_DATE }}." \
+            --draft \
+            --prerelease
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push lists
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v9.1.4
         with:
           add: |
             all_domains.lst
             dnsmasq-nfset.lst
           author_name: GitHub Action
           author_email: githubaction@githubaction.com
-          message: |
-            Update list domain: ${{ steps.get_date.outputs.date }}
+          message: "Update list domain: ${{ env.CURRENT_DATE }}"
           push: true

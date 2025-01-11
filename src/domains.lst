@@ -5,11 +5,23 @@
 fast.com
 showip.net
 
+# Социальные сети и медиаплатформы:
+# Форумы, сообщества
+broncosportforum.com
+forum.ru-board.com
+guilded.gg
+hackernoon.com
+kmail-lists.com
+knowyourmeme.com
+lolz.guru
+skladchiki.pro
+skladchina.vip
+threads.net
+
 # Meta (Instagram, Facebook)
 facebook.net
 ig.me
 internalfb.com
-meta.com
 oculus.com
 
 # Twitter/X
@@ -31,21 +43,6 @@ twttr.net
 twvid.com
 vine.co
 
-# Youtube
-i.yting.com
-youtu.be
-ytimg.l.google.com
-
-# Google
-gemini.google.com
-lookerstudio.google.com
-suggestqueries.google.com
-
-# Microsoft
-copilot.microsoft.com
-designer.microsoft.com
-xsts.auth.xboxlive.com
-
 # Tik-tok
 byteoversea.com
 ibytedtos.com
@@ -62,11 +59,79 @@ tiktokv.us
 tiktokw.us
 ttwstatic.com
 
+# Видеохостинги и стриминговые сервисы:
+7tv.app
+7tv.io
+api.service-kp.com
+filmix.fm
+filmix.la
+kinopub.me
+lostfilmtv2.site
+static.lostfilm.top
+
+#Аниме, мультфильмы и развлечения
+animebest.org
+animespirit.ru
+animeteatr.tv
+animevost.in
+big-anime.ru
+dorama.live
+doramalive.ru
+doramy.club
+f95-zone.to
+filmix.ac
+ilook.tv
+kara.su
+kinogo.la
+kinogo.uk
+kinovod.net
+mangadex.org
+mydoramy.club
+shikimori.me
+shikimori.org
+smotretanime.ru
+sovetromantica.com
+vndb.org
+wiki.fextralife.com
+yandere.tv
+yaoilib.me
+
+# HDrezka
+hdrezka.me
+rezka.my
+rezkify.com
+voidboost.cc
+
+# Netflix
+nflxext.com
+nflximg.net
+nflxvideo.net
+
+# Youtube
+i.yting.com
+youtu.be
+ytimg.l.google.com
+
+# Google
+gemini.google.com
+lookerstudio.google.com
+suggestqueries.google.com
+
+# Microsoft
+copilot.microsoft.com
+designer.microsoft.com
+xsts.auth.xboxlive.com
+
+# linkedin.com
+dms.licdn.com
+media.licdn.com
+static.licdn.com
+
 # servarr
 sentry.servarr.com
 translate.servarr.com
 
-#Новости, СМИ и информация
+# Новости, СМИ и информация
 api.theins.info
 arbat.media
 cyxymu.info
@@ -81,6 +146,7 @@ korrespondent.net
 kovcheg.live
 krymr.com
 lamcdn.net
+ldoceonline.com
 newsroom.porsche.com
 newsru.co.il
 oi.legal
@@ -129,22 +195,9 @@ glpals.com
 gpsonextra.net
 xtracloud.net
 
-# linkedin.com
-dms.licdn.com
-media.licdn.com
-static.licdn.com
-
-# OpenAI
-oaiusercontent.com
-
 # blocked in Crimea
 netlify.com
 reactflow.dev
-
-# Netflix
-nflxext.com
-nflximg.net
-nflxvideo.net
 
 # Cloud, VPS, domains services
 webnames.ca
@@ -161,14 +214,6 @@ filmitorrent.net
 kinozal.guru
 nnmstatic.win
 torrentgalaxy.to
-
-# Media
-api.service-kp.com
-filmix.fm
-filmix.la
-kinopub.me
-lostfilmtv2.site
-static.lostfilm.top
 
 # Media DB
 theaudiodb.com
@@ -223,10 +268,25 @@ trellix.com
 veeam.com
 vmware.com
 
+# Инструменты и сервисы:
 # Programs
 flourish.studio
 teamviewer.com
 zbigz.com
+
+# SimpleX Chat
+simplex.chat
+simplex.im
+smp1.adminforge.de
+smp2.adminforge.de
+smp3.adminforge.de
+
+# parsec.app
+public.parsec.app
+
+# Heroku
+assets.heroku.com
+herokucdn.com
 
 # AI
 ai-chat.bsg.brave.com
@@ -237,6 +297,9 @@ recraft.ai
 remove.bg
 sora.com
 
+# OpenAI
+oaiusercontent.com
+
 # Microchips
 mouser.fi
 tsmc.com
@@ -245,62 +308,24 @@ tsmc.com
 geforcenow.com
 gfn.am
 
-# Notion
-notion.so
+#SEO, анализ сайтов и интернет-маркетинг
+ahrefs.com
+telemetr.io
 
-#cdn.statically.io
+# Notion
+cdn.statically.io
 notion-static.com
 notion.new
 notion.site
+notion.so
 
 # Info
 dpidetector.org
-
-# Shops out
-abercrombie.com
-adidas.com
-alza.hu
-bestbuy.com
-bumble.com
-gr-assets.com
-hollisterco.com
-kupujemprodajem.com
-nike.com
-sephora.com
-timberland.de
-walmart.com
 
 # Porn
 phncdn.com
 playboy.com
 reddxxx.com
-
-#Аниме, мультфильмы и развлечения
-animebest.org
-animespirit.ru
-animeteatr.tv
-animevost.in
-big-anime.ru
-dorama.live
-doramalive.ru
-doramy.club
-f95-zone.to
-filmix.ac
-ilook.tv
-jut.su
-kara.su
-kinogo.la
-kinogo.uk
-kinovod.net
-mangadex.org
-mydoramy.club
-shikimori.me
-shikimori.org
-smotretanime.ru
-sovetromantica.com
-vndb.org
-yandere.tv
-yaoilib.me
 
 # Salesforce
 force-user-content.com
@@ -323,57 +348,35 @@ digitalcontent.sky
 sky.com
 skycdp.com
 
+# Games и игровая индустрия:
+riotpixels.com
 # Supercell
 brawlstarsgame.com
 clashofclans.com
 clashroyaleapp.com
 squadbustersgame.com
 supercell.com
+#Спорт и игры
+f1.com
+footballapi.pulselive.com
+gamedistribution.com
+gamesrepack.com
+nba.com
+nfl.com
+nhl.com
+pcgamesn.com
+shop.gameloft.com
 
-# Games
-riotpixels.com
-
-# Messengers
-signal.org
-
-# SimpleX Chat
-simplex.chat
-simplex.im
-smp1.adminforge.de
-smp2.adminforge.de
-smp3.adminforge.de
-
-# parsec.app
-public.parsec.app
-
-# HDrezka
-hdrezka.me
-rezka.my
-rezkify.com
-voidboost.cc
+# Amazon
+gaming.amazon.com
 
 # Autodesk
 autodesk.com
 cdn.web-platform.io
 
-# Heroku
-assets.heroku.com
-herokucdn.com
-
-# Amazon
-gaming.amazon.com
-
 #Сервисы для SMS и телефонии
 5sim.net
 onlinesim.io
-
-#Онлайн-телевидение и стриминговые платформы
-7tv.app
-7tv.io
-
-#SEO, анализ сайтов и интернет-маркетинг
-ahrefs.com
-telemetr.io
 
 #Изображения, графика и дизайн
 alphacoders.com
@@ -385,6 +388,8 @@ prnt.sc
 banana-pi.org
 britannica.com
 clickup.com
+oemdrivers.com
+sponsor.ajay.app
 
 #Устройства, технологии и электроника
 amazfitwatchfaces.com
@@ -396,22 +401,8 @@ flir.com
 flir.eu
 infineon.com
 nxp.com
-oemdrivers.com
 quietpc.com
 shinyhardware.co.uk
-
-#Форумы, сообщества и социальные сети
-broncosportforum.com
-forum.ru-board.com
-guilded.gg
-hackernoon.com
-kmail-lists.com
-knowyourmeme.com
-lolz.guru
-quora.com.cdn.cloudflare.net
-skladchiki.pro
-skladchina.vip
-threads.net
 
 #Финансы, криптовалюты и платежи
 cbilling.eu
@@ -424,17 +415,22 @@ okx.com
 opensea.io
 polymarket.com
 privatekeys.pw
+squareup.com
 
-#Спорт и игры
-f1.com
-footballapi.pulselive.com
-gamedistribution.com
-gamesrepack.com
-nba.com
-nfl.com
-nhl.com
-pcgamesn.com
-shop.gameloft.com
+# Shops out
+abercrombie.com
+adidas.com
+alza.hu
+bestbuy.com
+bumble.com
+gr-assets.com
+hollisterco.com
+kupujemprodajem.com
+nike.com
+sephora.com
+temu.com
+timberland.de
+walmart.com
 
 #Разное
 4pna.com
@@ -446,6 +442,7 @@ btdig.com
 buanzo.org
 buymeacoffee.com
 capcut.com
+carrefouruae.com
 cats.com
 cdw.com
 clarity.ms
@@ -470,10 +467,10 @@ htmhell.dev
 iedb.org
 ign.com
 intuit.com
-ldoceonline.com
 libgen.li
 lidarr.audio
 lifehacker.com
+lucid.app
 medicalnewstoday.com
 megapeer.vip
 middlewareinventory.com
@@ -492,11 +489,9 @@ saverudata.net
 simplix.info
 smartbear.com
 smassets.net
-sponsor.ajay.app
 spreadthesign.com
-squareup.com
 surveymonkey.com
-temu.com
+synoforum.com
 trueblackmetalradio.com
 ukrtelcdn.net
 upwork.com
@@ -504,6 +499,5 @@ visualcapitalist.com
 volkswagen-classic-parts.com
 webtoons.com
 weebly.com
-wiki.fextralife.com
 wikidot.com
 zedge.net

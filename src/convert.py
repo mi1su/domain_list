@@ -73,16 +73,16 @@ def combine_files(input_files, output_file):
     for file in input_files:
         try:
             with open(file) as infile:
-                combined.update(line.strip() for line in infile if line.strip())
+                # Игнорируем строки, начинающиеся с # (комментарии)
+                combined.update(line.strip() for line in infile if line.strip() and not line.strip().startswith('#'))
         except FileNotFoundError:
             print(f"Warning: Input file '{file}' not found. Skipping.")
     # Записываем объединённый список
     with open(output_file, "w") as outfile:
         for domain in sorted(combined):
             outfile.write(f"{domain}\n")
-    print(
-        f"Combined file saved to: {os.path.abspath(output_file)}"
-    )  # Печать пути сохраненного файла
+    # Печать пути сохраненного файла
+    print(f"Combined file saved to: {os.path.abspath(output_file)}")
 
 
 def generate_dnsmasq(input_file, output_file):
@@ -100,9 +100,8 @@ def generate_dnsmasq(input_file, output_file):
         for domain in sorted(domains):
             outfile.write(f"nftset=/{domain}/4#inet#fw4#vpn_domains\n")
             # outfile.write(f"nftset=/{domain}/6#inet#fw4#vpn_domains\n")
-    print(
-        f"DNSMasq file saved to: {os.path.abspath(output_file)}"
-    )  # Печать пути сохраненного файла
+    # Печать пути сохраненного файла
+    print(f"DNSMasq file saved to: {os.path.abspath(output_file)}")
 
 
 def cleanup_temp_files(*files):
