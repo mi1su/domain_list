@@ -6,7 +6,7 @@ on:
     paths:
       - .github/workflows/create-lists.yml
       - src/**
-      - src/convert.py
+      - src/domains.py
   workflow_dispatch:  # Позволяет запускать вручную через GitHub UI
   schedule:
     - cron: '17 0 */3 * *'
@@ -34,7 +34,7 @@ jobs:
           pip install tldextract
 
       - name: Run script
-        run: python src/convert.py  # Запускаем скрипт
+        run: python src/domains.py  # Запускаем скрипт
 
       - name: Update date variable
         id: get_date
@@ -47,15 +47,13 @@ jobs:
           echo "CURRENT_DATE=$CURRENT_DATE" >> $GITHUB_ENV
           echo "CURRENT_TAG=$CURRENT_TAG" >> $GITHUB_ENV
 
-      - name: Create Pre-release with gh CLI
+      - name: Create Release with gh CLI
         run: |
           gh release create "v${{ env.CURRENT_TAG }}" \
             ./all_domains.lst \
             ./dnsmasq-nfset.lst \
             --title "Release ${{ env.CURRENT_DATE }}" \
-            --notes "Актуальные списки доменов на ${{ env.CURRENT_DATE }}." \
-            --draft \
-            --prerelease
+            --notes "Актуальные списки доменов на ${{ env.CURRENT_DATE }}."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
