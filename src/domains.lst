@@ -64,11 +64,6 @@ tiktokv.us
 tiktokw.us
 ttwstatic.com
 
-# LinkedIn.com
-dms.licdn.com
-media.licdn.com
-static.licdn.com
-
 # Видеохостинги и стриминговые сервисы:
 7tv.app
 7tv.io
@@ -82,24 +77,6 @@ more.fm
 novaline.fm
 static.lostfilm.top
 trueblackmetalradio.com
-
-# HDrezka
-hdrezka.ac
-hdrezka.me
-rezka.my
-rezkify.com
-voidboost.cc
-
-# Netflix
-nflxext.com
-nflximg.net
-nflxvideo.net
-
-# YouTube
-i.yting.com
-returnyoutubedislikeapi.com
-youtu.be
-ytimg.l.google.com
 
 #Аниме, мультфильмы и развлечения
 animebest.org
@@ -127,6 +104,40 @@ vndb.org
 wiki.fextralife.com
 yandere.tv
 yaoilib.me
+
+# HDrezka
+hdrezka.ac
+hdrezka.me
+rezka.my
+rezkify.com
+voidboost.cc
+
+# Netflix
+nflxext.com
+nflximg.net
+nflxvideo.net
+
+# Youtube
+i.yting.com
+returnyoutubedislikeapi.com
+youtu.be
+ytimg.l.google.com
+
+# Google
+gemini.google.com
+lookerstudio.google.com
+proactivebackend-pa.googleapis.com
+suggestqueries.google.com
+
+# Microsoft
+copilot.microsoft.com
+designer.microsoft.com
+xsts.auth.xboxlive.com
+
+# LinkedIn.com
+dms.licdn.com
+media.licdn.com
+static.licdn.com
 
 # Новости, СМИ и информация
 api.theins.info
@@ -182,6 +193,7 @@ as6723.net
 bell-sw.com
 buf.build
 cart.webex.com
+cdn.statically.io
 cloud.oracle.com
 cloud.webscraper.io
 codeium.com
@@ -250,17 +262,6 @@ tuta.io
 vpnlove.me
 vpnpay.io
 
-# Google
-gemini.google.com
-lookerstudio.google.com
-proactivebackend-pa.googleapis.com
-suggestqueries.google.com
-
-# Microsoft
-copilot.microsoft.com
-designer.microsoft.com
-xsts.auth.xboxlive.com
-
 # servarr
 sentry.servarr.com
 translate.servarr.com
@@ -282,9 +283,12 @@ reactflow.dev
 geolocation.onetrust.com
 intel.de
 intel.nl
+intel.se
 
-# nvidia
+# Nvidia
 developer.nvidia.com
+geforcenow.com
+gfn.am
 install.launcher.omniverse.nvidia.com
 
 # Torrent trackers и файлообмен
@@ -340,7 +344,6 @@ mouser.fi
 tsmc.com
 
 # Notion
-cdn.statically.io
 notion-static.com
 notion.new
 notion.site
@@ -355,9 +358,25 @@ telemetr.io
 dpidetector.org
 
 # Porn
+attachments.f95zone.to
+chaturbate.com
+hentai-foundry.com
+hqporner.com
+multporn.net
+nhentai.com
 phncdn.com
+phncdn.com.sds.rncdn7.com
 playboy.com
+pornhub.com
+pornhub.org
+porno666.link
 reddxxx.com
+redgifs.com
+rule34.art
+rusvideos.net
+trahkino.me
+xv-ru.com
+xvideos.com
 
 # Salesforce
 force-user-content.com
@@ -402,10 +421,6 @@ premierleague.com
 shop.gameloft.com
 store.ubi.com
 xbox.com
-
-# Nvidia
-geforcenow.com
-gfn.am
 
 # Amazon
 gaming.amazon.com
@@ -614,7 +629,6 @@ iherb.com
 indeed.com
 informit.com
 insanelymac.com
-intel.se
 joesandbox.com
 jsfiddle.net
 keepgrowing.in
