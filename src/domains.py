@@ -125,7 +125,8 @@ def save_nftset_list(merged_domains, nfset_file):
 
 def main():
     remote_url = "https://raw.githubusercontent.com/1andrevich/Re-filter-lists/main/domains_all.lst"
-    local_file = "src/domains.lst"
+    blocked_file = "src/blocked_domains.lst"
+    restrict_file = "src/restrict_domains.lst"
     output_file = "all_domains.lst"
     nfset_file = "dnsmasq-nfset.lst"
 
@@ -133,8 +134,14 @@ def main():
         print("Downloading remote domain list...")
         remote_domains = download_domains(remote_url)
 
-        print("Reading local domain list...")
-        local_domains = read_local_domains(local_file)
+        print("Reading local blocked domains...")
+        blocked_domains = read_local_domains(blocked_file)
+        
+        print("Reading local restricted domains...")
+        restrict_domains = read_local_domains(restrict_file)
+        
+        # Объединяем домены из двух локальных файлов
+        local_domains = blocked_domains + restrict_domains
 
         print("Merging domain lists...")
         merged_domains = merge_lists(remote_domains, local_domains)
@@ -143,7 +150,7 @@ def main():
         save_merged_list(merged_domains, output_file)
         save_nftset_list(merged_domains, nfset_file)
 
-        print(f"Processed {len(remote_domains)} remote domains and {len(local_domains)} local domains.")
+        print(f"Processed {len(remote_domains)} remote domains, {len(blocked_domains)} blocked and {len(restrict_domains)} restricted local domains.")
         print(f"After merging: {len(merged_domains)} domains.")
 
     except Exception as e:
