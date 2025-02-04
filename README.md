@@ -23,6 +23,7 @@ https://explorer.ooni.org/ru/chart/mat?test_name=web_connectivity&axis_x=measure
 https://github.com/123jjck/russia-proxy-hosts/blob/main/hosts.txt  
 https://github.com/itdoginfo/allow-domains/blob/main/Categories/geoblock.lst  
 https://github.com/dartraiden/no-russia-hosts/blob/master/hosts.txt  
+https://github.com/censortracker/ctconf/blob/main/reverse-restrictions/ru/sites.json  
 
 x-ray  
 https://github.com/unidcml/domain-list-community  
