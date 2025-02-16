@@ -75,7 +75,19 @@ jobs:
           mv community/geosite.dat .
           mv community/geosite.dat.sha256sum .
 
-      - name: Push  "where is it launched from"
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet all_domains.lst dnsmasq-nfset.lst geosite.dat geosite.dat.sha256sum; then
+            echo "No changes detected"
+            echo "changes=false" >> $GITHUB_ENV
+          else
+            echo "Changes detected"
+            echo "changes=true" >> $GITHUB_ENV
+          fi
+
+      - name: Push changes if any
+        if: env.changes == 'true'
         uses: EndBug/add-and-commit@v9.1.4
         with:
           add: |
@@ -89,6 +101,7 @@ jobs:
           push: true
 
       - name: Git push assets to "release" branch
+        if: env.changes == 'true'
         run: |
           git init
           git config --local user.name "github-actions[bot]"
@@ -101,6 +114,7 @@ jobs:
           git push -f -u origin release
 
       - name: Create Release with gh CLI
+        if: env.changes == 'true'
         run: |
           gh release create "v${{ env.CURRENT_TAG }}" \
             ./all_domains.lst \
