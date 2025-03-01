@@ -7,6 +7,7 @@ chatfuel.com
 claude.ai
 elevenlabs.io
 fastflux.ai
+genspark.ai
 geospy.ai
 grazie.ai
 groq.com
@@ -20,6 +21,16 @@ sam2.metademolab.com
 sora.com
 watermarkremover.io
 x.ai
+
+#Copilot
+api.github.com
+copilot-proxy.githubusercontent.com
+copilot.githubusercontent.com
+githubcopilot.com
+
+# Github
+copilot.microsoft.com
+vscode-auth.github.com
 
 # OpenAI
 chatgpt.com
@@ -105,16 +116,9 @@ squadbustersgame.com
 supercell.com
 
 # Microsoft
-copilot.microsoft.com
 designer.microsoft.com
 software-static.download.prss.microsoft.com
 xsts.auth.xboxlive.com
-
-# Github
-api.github.com
-githubcopilot.com
-githubusercontent.com
-vscode-auth.github.com
 
 # Salesforce
 force-user-content.com
@@ -149,7 +153,6 @@ nflxvideo.net
 badoo.com
 bumble.com
 dating.com
-furaffinity.net
 guilded.gg
 kemono.su
 kmail-lists.com
@@ -292,6 +295,7 @@ deepsource.com
 deepsource.io
 devops.com
 disctech.com
+docker.elastic.co
 docker.io
 freemyip.com
 grafana.com
@@ -581,6 +585,7 @@ premierleague.com
 # Other
 2407.pl
 5parks.com
+6pm.com
 account.templatemonster.com
 alberta.ca
 angryemailtranslator.com
@@ -588,6 +593,7 @@ annimon.com
 aplawrence.com
 att.com
 atwiki.jp
+av-connection.com
 bell-sw.com
 bluesky-soft.com
 bmc.com
@@ -599,13 +605,17 @@ cats.com
 chainreactioncycles.com
 cloud.webscraper.io
 cmems-du.eu
+codebrowser.dev
 contabo.com
 copernicus.eu
 cpu-monkey.com
+darkproject.eu
 databricks.com
 e-hentai.org
+engagor.com
 extremetech.com
 familysearch.org
+fast.com
 findagrave.com
 fls.guru
 forum.netgate.com
@@ -615,6 +625,7 @@ global.fncstatic.com
 glpals.com
 gov.ua
 htmhell.dev
+humblebundle.com
 hyundainews.com
 imagecache365.com
 indeed.com
@@ -636,7 +647,9 @@ neo4j.com
 newsroom.porsche.com
 ottg.app
 padi.com
+parts-express.com
 peter-tanner.com
+pizzahut.com
 plugshare.com
 public.parsec.app
 readybot.io
@@ -648,10 +661,13 @@ sdxcentral.com
 semrush.com
 sendy.jp
 servarr.com
+showtime.com
+skyshowtime.com
 spirit-of-metal.com
 spitfireaudio.com
 stagescycling.com
 steganos.com
+stereophile.com
 stuff.co.nz
 support.ruckuswireless.com
 talosintelligence.com
@@ -659,5 +675,6 @@ tempmail.plus
 typing.com
 uaudio.com
 vehiclelifetimesolutions.schaeffler.com
+we.tl
 wetransfer.com
 wk.cz
