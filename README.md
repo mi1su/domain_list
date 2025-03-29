@@ -207,10 +207,10 @@ xxd geosite.dat | head -n 20
 
 Вы можете поддержать проект, поставив :star: этому репозиторию (сверху справа этой страницы)
 
-<a href="https://star-history.com/#Flowseal/zapret-discord-youtube&Date">
+<a href="https://star-history.com/#mi1su/domain_list&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Flowseal/zapret-discord-youtube&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Flowseal/zapret-discord-youtube&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Flowseal/zapret-discord-youtube&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=mi1su/domain_list&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=mi1su/domain_list&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=mi1su/domain_list&type=Date" />
  </picture>
 </a>
