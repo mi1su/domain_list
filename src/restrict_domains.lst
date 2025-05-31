@@ -1,8 +1,4 @@
 # AI
-generativelanguage.googleapis.com
-manus.im
-api.manus.im
-files.manus.cdn
 ai-chat.bsg.brave.com
 ai.com
 aidemos.meta.com
@@ -13,7 +9,6 @@ claude.ai
 elevenlabs.io
 fastflux.ai
 files.manus.cdn
-generativelanguage.googleapis.com
 genspark.ai
 geospy.ai
 grazie.ai
@@ -31,6 +26,22 @@ sam2.metademolab.com
 sora.com
 watermarkremover.io
 x.ai
+
+# google_ai
+aistudio.google.com
+alkalicore-pa.clients6.google.com
+alkalimakersuite-pa.clients6.google.com
+bard.google.com
+deepmind.com
+deepmind.google
+geller-pa.googleapis.com
+gemini.google
+gemini.google.com
+generativeai.google
+generativelanguage.googleapis.com
+makersuite.google.com
+notebooklm.google.com
+proactivebackend-pa.googleapis.com
 
 #Copilot
 api.github.com
@@ -94,13 +105,11 @@ notion.site
 notion.so
 
 # Google
-gemini.google.com
 google.dev
 lookerstudio.google.com
 news.google.com
 play.google.com
 play.googleapis.com
-proactivebackend-pa.googleapis.com
 suggestqueries.google.com
 
 # Hashicorp
@@ -164,15 +173,15 @@ nflxso.net
 nflxvideo.net
 
 # Social & communications
-badoo.com
 badoo.app
+badoo.com
 badoocdn.com
 bdo.to
-kismia.com
 bumble.com
 dating.com
 guilded.gg
 kemono.su
+kismia.com
 kmail-lists.com
 lipstickalley.com
 menti.com
@@ -372,6 +381,7 @@ thesassway.com
 
 # Programs
 apiary.io
+avira.com
 capacitorjs.com
 codeium.com
 daemon-tools.cc
@@ -606,7 +616,9 @@ premierleague.com
 6pm.com
 8chan.moe
 account.templatemonster.com
+aftermarket.zf.com
 alberta.ca
+amplitude.com
 angryemailtranslator.com
 annimon.com
 aplawrence.com
@@ -621,6 +633,9 @@ bitnami.com
 bluesky-soft.com
 bmc.com
 bmc.okta.com
+bosch.com
+boschaftermarket.com
+boschautoparts.com
 bradyid.com
 broncosportforum.com
 builds.parsec.app
@@ -637,6 +652,7 @@ cpu-monkey.com
 darkproject.eu
 databricks.com
 dice.com
+disneyplus.com
 docker.com
 e-hentai.org
 easyjet.com
@@ -647,6 +663,7 @@ familysearch.org
 fast.com
 findagrave.com
 fls.guru
+flyertalk.com
 forum.netgate.com
 foxnews.com
 g711.org
@@ -655,11 +672,14 @@ gateway.pinata.cloud
 global.fncstatic.com
 glpals.com
 gov.ua
+gpu-monkey.com
+hbomax.com
 htmhell.dev
 humblebundle.com
 hyundainews.com
 ikea.com
 imagecache365.com
+imgur.com
 indeed.com
 insanelymac.com
 intellipaat.com
@@ -667,7 +687,6 @@ iperf3serverlist.net
 issuu.com
 jsfiddle.net
 keepgrowing.in
-kismia.com
 klaviyo.com
 kowalski7cc.xyz
 lifehacker.com
@@ -676,6 +695,7 @@ logo.com
 macvendors.com
 mailchi.mp
 matrix-client.matrix.org
+max.com
 me.meshcapade.com
 meest-shop.com
 michaelkors.global
@@ -689,6 +709,9 @@ myworld.leica-geosystems.com
 neo4j.com
 newsroom.porsche.com
 ngrok.community
+nordaccount.com
+nordcdn.com
+ntp.msn.com
 ottg.app
 padi.com
 parts-express.com
@@ -699,6 +722,7 @@ public.parsec.app
 readybot.io
 refactoring.guru
 remna.st
+reve.art
 ripcordchat.onfastspring.com
 rocketsoftware.com
 sap.com
@@ -720,6 +744,7 @@ stuff.co.nz
 support.ruckuswireless.com
 syncfusion.com
 talosintelligence.com
+techbargains.com
 tempmail.plus
 tommy.com
 torrenteditor.com
@@ -730,6 +755,7 @@ vehiclelifetimesolutions.schaeffler.com
 we.tl
 wellfound.com
 wetransfer.com
+widgetapp.stream
+windsurf.com
 wk.cz
 xfantazy.com
-gpu-monkey.com
