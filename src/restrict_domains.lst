@@ -62,6 +62,7 @@ chatgpt.com
 oaistatic.com
 oaiusercontent.com
 openai.com
+production-openaicom-storage.azureedge.net
 
 # Cybersecurity & Privacy
 app.zerossl.com
@@ -100,6 +101,7 @@ vpnunlimited.com
 watchguard.com
 
 # Notion
+notion-emojis.s3-us-west-2.amazonaws.com
 notion-static.com
 notion.com
 notion.new
@@ -240,16 +242,37 @@ gaming.amazon.com
 primevideo.com
 
 # Design, photos and graphics
+adobe-identity.com
+adobe-services.com
 adobe.com
+adobe.io
+adobecc.com
+adobecces.com
+adobeccstatic.com
+adobedtm.com
+adobeexchange.com
+adobegenuine.com
+adobejanus.com
+adobelogin.com
+adobeoobe.com
+adobeprojectm.com
+adobesc.com
+adobess.com
+adobesunbreak.com
+adobetag.com
 alphacoders.com
+astockcdn.net
+behance.net
 blinkshot.io
 canva-apps.com
 canva.com
 canva.dev
 capcut.com
+cookielaw.org
 designify.com
 framer.com
 freeimages.com
+ftcdn.net
 members.summerana.com
 monotype.com
 monotypefonts.com
@@ -257,6 +280,8 @@ myfonts.com
 pexels.com
 pixabay.com
 seekvectorlogo.net
+typekit.com
+typekit.net
 unscreen.com
 yeggi.com
 yithemes.com
@@ -620,6 +645,7 @@ premierleague.com
 8chan.moe
 account.templatemonster.com
 aftermarket.zf.com
+ahrefs.com
 alberta.ca
 amplitude.com
 andrevi.ch
@@ -650,6 +676,7 @@ chainreactioncycles.com
 clip.opus.pro
 cloud.webscraper.io
 cmems-du.eu
+code.gist.build
 codebrowser.dev
 colamco.com
 contabo.com
@@ -701,6 +728,7 @@ imgur.com
 indeed.com
 insanelymac.com
 intellipaat.com
+intuit.com
 iperf3serverlist.net
 issuu.com
 jsfiddle.net
@@ -724,6 +752,7 @@ militarnyi.com
 monster.ie
 mssg.me
 myheritage.com
+myparallels.com
 myqrcode.com
 myrotvorets.center
 myworld-portal.leica-geosystems.com
@@ -735,8 +764,14 @@ nordaccount.com
 nordcdn.com
 ntp.msn.com
 openculture.com
+openh264.org
+openrouter.ai
 ottg.app
 padi.com
+parallels.cn
+parallels.com
+parallels.net
+parallelsaccess.com
 parts-express.com
 penguin.com
 penguinrandomhouse.com
@@ -747,6 +782,7 @@ public.parsec.app
 qwant.com
 raycast-releases.com
 readybot.io
+redislabs.com
 refactoring.guru
 remna.st
 reve.art
@@ -759,6 +795,7 @@ schenker-tech.de
 sdxcentral.com
 semrush.com
 sendy.jp
+sentry.dev
 servarr.com
 showtime.com
 skyshowtime.com
@@ -778,6 +815,7 @@ techthoughts.info
 tempmail.plus
 tommy.com
 torrenteditor.com
+trae.ai
 tutanota.com
 tvn24.pl
 typing.com
@@ -785,6 +823,7 @@ uaudio.com
 undress.cc
 usher.ttvnw.net
 vehiclelifetimesolutions.schaeffler.com
+wbgames.com
 wdfiles.com
 we.tl
 wellfound.com
