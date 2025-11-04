@@ -30,10 +30,10 @@ watermarkremover.io
 x.ai
 
 # google_ai
+aisandbox-pa.googleapis.com
 aistudio.google.com
-alkalicore-pa.clients6.google.com
-alkalimakersuite-pa.clients6.google.com
 bard.google.com
+clients6.google.com
 deepmind.com
 deepmind.google
 geller-pa.googleapis.com
@@ -41,9 +41,14 @@ gemini.google
 gemini.google.com
 generativeai.google
 generativelanguage.googleapis.com
+jules.google
+jules.google.com
+labs.google
 makersuite.google.com
+notebooklm.google
 notebooklm.google.com
 proactivebackend-pa.googleapis.com
+stitch.withgoogle.com
 
 #Copilot
 api.github.com
@@ -134,6 +139,7 @@ jetbrains.ai
 jetbrains.com
 jetbrains.space
 myjetbrains.com
+youtrack.cloud
 
 # Supercell
 brawlstarsgame.com
@@ -649,6 +655,8 @@ premierleague.com
 account.templatemonster.com
 aftermarket.zf.com
 ahrefs.com
+aircanada.com
+akc.org
 alberta.ca
 altsociety.ai
 amplitude.com
@@ -685,6 +693,7 @@ cmems-du.eu
 code.gist.build
 codebrowser.dev
 colamco.com
+connect.ngrok-agent.com
 contabo.com
 copernicus.eu
 cpu-monkey.com
@@ -779,6 +788,7 @@ myrotvorets.center
 myworld-portal.leica-geosystems.com
 myworld.leica-geosystems.com
 neo4j.com
+netacad.com
 netapp.com
 newsroom.porsche.com
 ngrok.community
@@ -823,9 +833,11 @@ sendy.jp
 sentry.dev
 servarr.com
 showtime.com
+siteground.com
 skyshowtime.com
 smartbear.co
 snapgene.com
+sonara.ai
 spirit-of-metal.com
 spitfireaudio.com
 sqlshack.com
@@ -842,6 +854,7 @@ tempmail.plus
 tommy.com
 torrenteditor.com
 trae.ai
+transferwise.com
 trueachievements.com
 tutanota.com
 tvn24.pl
@@ -860,6 +873,7 @@ wellfound.com
 wetransfer.com
 widgetapp.stream
 windsurf.com
+wise.com
 wk.cz
+wwnd.space
 xfantazy.com
-youtrack.cloud
