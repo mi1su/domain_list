@@ -62,11 +62,16 @@ vscode-auth.github.com
 
 # OpenAI
 chat.com
-chat.openai.com.cdn.cloudflare.net
 chatgpt.com
+chatgpt.livekit.cloud
 oaistatic.com
 oaiusercontent.com
 openai.com
+openai.com.cdn.cloudflare.net
+openaiapi-site.azureedge.net
+openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+openaicom.imgix.net
+openaicomproductionae4b.blob.core.windows.net
 production-openaicom-storage.azureedge.net
 
 # Telegram
@@ -136,6 +141,7 @@ notion.so
 
 # Google
 google.dev
+googletagmanager.com
 lookerstudio.google.com
 news.google.com
 play.google.com
@@ -170,7 +176,11 @@ squadbustersgame.com
 supercell.com
 
 # Microsoft
+d.docs.live.net
 designer.microsoft.com
+edge.microsoft.com
+edgeservices.bing.com
+mobile.events.data.microsoft.com
 software-static.download.prss.microsoft.com
 xsts.auth.xboxlive.com
 
@@ -246,9 +256,14 @@ tiktokcdn-us.com
 tiktokcdn.com
 tiktokd.net
 tiktokd.org
+tiktokeu-cdn.com
+tiktokrow-cdn.com
 tiktokv.com
+tiktokv.eu
 tiktokv.us
+tiktokw.eu
 tiktokw.us
+ttlivecdn.com
 ttwstatic.com
 
 # Cloud Services
@@ -271,12 +286,19 @@ primevideo.com
 # Design, photos and graphics
 adobe-identity.com
 adobe-services.com
+adobe.activate.com
 adobe.com
+adobe.de
 adobe.io
+adobe.ipp
+adobe.net
+adobe.newoa
+adobe.ntp
 adobecc.com
 adobecces.com
 adobeccstatic.com
 adobedtm.com
+adobeereg.com
 adobeexchange.com
 adobegenuine.com
 adobejanus.com
@@ -330,11 +352,12 @@ ultimaker.com
 vectorworks.net
 
 # Autodesk
-accounts.autodesk.com
+autocad.com
+autodesk.com
+autodesk.io
+autodesk.net
+autodesk360.com
 cdn.web-platform.io
-damassets.autodesk.net
-dl.appstreaming.autodesk.com
-efulfillment.autodesk.com
 
 # Heroku
 assets.heroku.com
@@ -371,6 +394,7 @@ airbrake.io
 altaro.com
 artifacts.elastic.co
 atlassian.com
+bitbucket.org
 buanzo.org
 buf.build
 cdw.com
@@ -382,6 +406,7 @@ disctech.com
 docker.elastic.co
 docker.io
 freemyip.com
+gitlab.io
 grafana.com
 graylog.org
 ibm.com
@@ -416,6 +441,7 @@ sysdig.com
 systemtek.co.uk
 telemetr.io
 thomas-krenn.com
+turn.livekit.cloud
 veritas.com
 webnames.ca
 zapier.com
@@ -566,6 +592,7 @@ hashkey.com
 iaai.com
 myprepaidcenter.com
 oasis.app
+paypal.com
 pump.fun
 refinitiv.com
 squareup.com
@@ -624,6 +651,7 @@ icd10data.com
 medicalnewstoday.com
 
 # Info
+4pda.ru
 4pda.to
 habr.com
 informit.com
@@ -695,6 +723,7 @@ auth.hpe.com
 av-connection.com
 bell-sw.com
 binaryedge.io
+bitcoin.org
 bitnami.com
 bluesky-soft.com
 bmc.com
@@ -754,6 +783,7 @@ gateway.pinata.cloud
 global.fncstatic.com
 global.platform.seconddinnertech.com
 glpals.com
+gnome-look.org
 gov.ua
 gpu-monkey.com
 gql.twitch.tv
@@ -867,6 +897,7 @@ stagescycling.com
 steganos.com
 stereophile.com
 stuff.co.nz
+support.huawei.com
 support.ruckuswireless.com
 syncfusion.com
 talosintelligence.com
@@ -887,6 +918,7 @@ undress.cc
 usher.ttvnw.net
 varonis.com
 vehiclelifetimesolutions.schaeffler.com
+velocidrone.com
 volet.com
 wbgames.com
 wccftech.com
@@ -894,9 +926,10 @@ wdfiles.com
 we.tl
 wellfound.com
 wetransfer.com
+wheather.com
 widgetapp.stream
 windsurf.com
 wise.com
 wk.cz
 wwnd.space
-xfantazy.comm
+xfantazy.com
