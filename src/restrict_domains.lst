@@ -146,6 +146,7 @@ lookerstudio.google.com
 news.google.com
 play.google.com
 play.googleapis.com
+robinfrontend-pa.googleapis.com
 suggestqueries.google.com
 
 # Hashicorp
@@ -701,6 +702,7 @@ premierleague.com
 5parks.com
 6pm.com
 8chan.moe
+a-vrv.akamaized.net
 account.templatemonster.com
 aftermarket.zf.com
 ahrefs.com
@@ -716,6 +718,7 @@ ansys.com
 aplawrence.com
 app.langdock.com
 arc.net
+arduino.cc
 att.com
 atwiki.jp
 augmentcode.com
@@ -757,6 +760,8 @@ diabrowser.com
 dice.com
 disneyplus.com
 docker.com
+document360.com
+document360.io
 e-hentai.org
 easydmarc.com
 easyjet.com
@@ -810,8 +815,10 @@ issuu.com
 itdog.info
 jsfiddle.net
 keepgrowing.in
+klarna.com
 klaviyo.com
 kowalski7cc.xyz
+legalshield.com
 lgeapi.com
 lgthinq.com
 lifehacker.com
@@ -830,6 +837,8 @@ meest-shop.com
 michaelkors.global
 microcenter.com
 militarnyi.com
+mint.com
+mintmobile.com
 miracleptr.wordpress.com
 monster.ie
 mssg.me
@@ -842,6 +851,8 @@ myworld.leica-geosystems.com
 neo4j.com
 netacad.com
 netapp.com
+neuesbad.de
+new.abb.com
 newsroom.porsche.com
 ngrok.community
 nordaccount.com
@@ -851,18 +862,23 @@ openculture.com
 openh264.org
 openrouter.ai
 ottg.app
+paddle.com
+paddlestatus.com
 padi.com
 parallels.cn
 parallels.com
 parallels.net
 parallelsaccess.com
+paritydeals.com
 parts-express.com
 penguin.com
 penguinrandomhouse.com
+pepephone.com
 peter-tanner.com
 pizzahut.com
 plugshare.com
 posthog.com
+profitwell.com
 public.parsec.app
 qwant.com
 raycast-releases.com
@@ -897,8 +913,10 @@ stagescycling.com
 steganos.com
 stereophile.com
 stuff.co.nz
+support.anydesk.com
 support.huawei.com
 support.ruckuswireless.com
+swapd.co
 syncfusion.com
 talosintelligence.com
 techbargains.com
@@ -909,6 +927,7 @@ torrenteditor.com
 trae.ai
 transferwise.com
 trueachievements.com
+tsheets.com
 tutanota.com
 tvn24.pl
 typing.com
@@ -916,9 +935,11 @@ uaudio.com
 uizard.io
 undress.cc
 usher.ttvnw.net
+v.vrv.co
 varonis.com
 vehiclelifetimesolutions.schaeffler.com
 velocidrone.com
+vod-fy.crunchyrollcdn.com
 volet.com
 wbgames.com
 wccftech.com
@@ -933,3 +954,4 @@ wise.com
 wk.cz
 wwnd.space
 xfantazy.com
+xiaomi.eu
