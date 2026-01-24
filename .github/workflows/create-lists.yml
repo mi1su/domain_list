@@ -15,23 +15,23 @@ permissions:
 
 jobs:
   generate-lists:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5.3.0
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.13'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install tldextract
+          pip install tldextract requests idna
 
       - name: Run script
         run: python src/domains.py
@@ -48,13 +48,13 @@ jobs:
           echo "CURRENT_TAG=$CURRENT_TAG" >> $GITHUB_ENV
 
       - name: Checkout v2fly/domain-list-community
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v6
         with:
           repository: v2fly/domain-list-community
           path: community
 
       - name: Setup Go
-        uses: actions/setup-go@v5.3.0
+        uses: actions/setup-go@v6
         with:
           go-version-file: ./community/go.mod
           cache-dependency-path: ./community/go.sum
@@ -62,7 +62,7 @@ jobs:
       - name: Prepare data-ru
         run: |
           mkdir -p community/data-ru
-          cp all_domains.lst community/data-ru/domains-list
+          cp domains/all_domains.lst community/data-ru/domains-list
 
       - name: Generate geosite.dat
         run: |
@@ -72,13 +72,13 @@ jobs:
       - name: Generate SHA256 hash
         run: |
           sha256sum community/geosite.dat > community/geosite.dat.sha256sum
-          mv community/geosite.dat .
-          mv community/geosite.dat.sha256sum .
+          mv community/geosite.dat domains/
+          mv community/geosite.dat.sha256sum domains/
 
       - name: Check for changes
         id: check_changes
         run: |
-          if git diff --quiet all_domains.lst dnsmasq-nfset.lst geosite.dat geosite.dat.sha256sum; then
+          if git diff --quiet domains/; then
             echo "No changes detected"
             echo "changes=false" >> $GITHUB_ENV
           else
@@ -88,13 +88,9 @@ jobs:
 
       - name: Push changes if any
         if: env.changes == 'true'
-        uses: EndBug/add-and-commit@v9.1.4
+        uses: EndBug/add-and-commit@v9
         with:
-          add: |
-            all_domains.lst
-            dnsmasq-nfset.lst
-            geosite.dat
-            geosite.dat.sha256sum
+          add: 'domains/'
           author_name: "github-actions[bot]"
           author_email: "41898282+github-actions[bot]@users.noreply.github.com"
           message: "Update list domain: ${{ env.CURRENT_DATE }}"
@@ -103,24 +99,27 @@ jobs:
       - name: Git push assets to "release" branch
         if: env.changes == 'true'
         run: |
-          git init
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b release
-          git rm -r --cached .
-          git add all_domains.lst dnsmasq-nfset.lst geosite.dat geosite.dat.sha256sum
-          git commit -m "Update list domains: ${{ env.CURRENT_DATE }}" || echo "No changes to commit"
+          mkdir -p /tmp/release_assets
+          cp domains/all_domains.lst domains/dnsmasq_domains.lst domains/geosite.dat domains/geosite.dat.sha256sum /tmp/release_assets/
+          git checkout -B release
+          git rm -rf . || true
+          cp /tmp/release_assets/* .
+          git add .
+          git commit -m "Update list domains: ${{ env.CURRENT_DATE }}" || echo "No changes"
           git remote set-url origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
-          git push -f -u origin release
+          git push -f origin release
+          git checkout main
 
       - name: Create Release with gh CLI
         if: env.changes == 'true'
         run: |
           gh release create "v${{ env.CURRENT_TAG }}" \
-            ./all_domains.lst \
-            ./dnsmasq-nfset.lst \
-            ./geosite.dat \
-            ./geosite.dat.sha256sum \
+            ./domains/all_domains.lst \
+            ./domains/dnsmasq_domains.lst \
+            ./domains/geosite.dat \
+            ./domains/geosite.dat.sha256sum \
             --title "Release ${{ env.CURRENT_DATE }}" \
             --notes "Актуальные списки доменов на ${{ env.CURRENT_DATE }}."
         env:
