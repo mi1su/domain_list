@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install tldextract requests idna
+          pip install -r requirements.txt
 
       - name: Run script
         run: python src/domains.py
@@ -51,29 +51,25 @@ jobs:
         uses: actions/checkout@v6
         with:
           repository: v2fly/domain-list-community
-          path: community
+          path: /tmp/community
 
       - name: Setup Go
         uses: actions/setup-go@v6
         with:
-          go-version-file: ./community/go.mod
-          cache-dependency-path: ./community/go.sum
+          go-version-file: /tmp/community/go.mod
+          cache-dependency-path: /tmp/community/go.sum
 
       - name: Prepare data-ru
         run: |
-          mkdir -p community/data-ru
-          cp domains/all_domains.lst community/data-ru/domains-list
+          mkdir -p /tmp/community/data-ru
+          cp domains/all_domains.lst /tmp/community/data-ru/domains-list
 
       - name: Generate geosite.dat
         run: |
-          cd community
+          cd /tmp/community
           go run ./ --exportlists=domains-list --outputname=geosite.dat --datapath=data-ru
-
-      - name: Generate SHA256 hash
-        run: |
-          sha256sum community/geosite.dat > community/geosite.dat.sha256sum
-          mv community/geosite.dat domains/
-          mv community/geosite.dat.sha256sum domains/
+          cp geosite.dat ../domains/
+          sha256sum geosite.dat > ../domains/geosite.dat.sha256sum
 
       - name: Check for changes
         id: check_changes
