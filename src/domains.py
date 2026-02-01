@@ -6,6 +6,7 @@ import pandas as pd
 import datetime
 import os
 from idna import encode as idna_encode
+from io import BytesIO
 
 def normalize_domain(domain):
     """Приводит к нижнему регистру, чистит пробелы, убирает www и конвертирует в Punycode."""
@@ -20,78 +21,44 @@ def normalize_domain(domain):
         pass
     return domain
 
-def get_ooni_confirmed():
-    """Получение подтвержденных блокировок из OONI API и обновление файла."""
-    
-    # Качаем свежие данные за месяц
+def get_ooni_confirmed(ooni_output):
+    """
+    Получение ТОЛЬКО подтвержденных блокировок из OONI за месяц.
+    Если данных по домену нет или он 'ожил' — он удаляется.
+    """
     today = datetime.datetime.now()
     since = (today - datetime.timedelta(days=30)).strftime('%Y-%m-%d')
     until = today.strftime('%Y-%m-%d')
     
     params = {
         "axis_y": "domain",
-        "axis_x": "measurement_start_day",
         "probe_cc": "RU",
         "since": since,
         "until": until,
         "test_name": "web_connectivity",
-        "time_grain": "day",
         "format": "CSV"
     }
     url = f"https://api.ooni.io/api/v1/aggregation?{'&'.join([f'{k}={v}' for k, v in params.items()])}"
     
-    csv_path = '/tmp/ooni_monthly.csv'
-    ooni_output = "domains/ooni_domains.lst"
-    
     try:
-        response = requests.get(url, timeout=60)
+        response = requests.get(url, timeout=120)
         response.raise_for_status()
-        with open(csv_path, 'wb') as f:
-            f.write(response.content)
-        
-        # Обрабатываем данные
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(BytesIO(response.content))
         df = df[pd.notna(df['domain'])]
-        df = df[~df['domain'].astype(str).str.contains(r'\.{2,}', na=False)]
-        df = df[df['anomaly_count'] > df['ok_count']]
-        df = df[df['measurement_count'] > 0]
-        df = df.sort_values('measurement_count', ascending=False)
-        df = df.drop_duplicates(subset='domain')
+
+        blocked_df = df[
+            (df.get('confirmed_count', 0) > 0) | 
+            ((df['anomaly_count'] > df['ok_count']) & (df['anomaly_count'] > 2))
+        ]
         
-        new_domains = df['domain'].apply(normalize_domain).dropna().tolist()
-        new_domains = [d for d in new_domains if d and '.' in d]
+        ooni_domains = blocked_df['domain'].apply(normalize_domain).dropna().unique().tolist()
+        ooni_domains = [d for d in ooni_domains if d and '.' in d]
         
-        if not new_domains:
-            print("No new OONI domains found this month")
-            if os.path.exists(csv_path):
-                os.remove(csv_path)
-            return []
-        
-        # Загружаем существующий файл и проверяем дубликаты
-        existing_domains = set()
-        if os.path.exists(ooni_output):
-            with open(ooni_output, 'r', encoding='utf-8') as f:
-                existing_domains = set(line.strip() for line in f if line.strip())
-        
-        # Объединяем старые + новые
-        all_domains = existing_domains.union(new_domains)
-        
-        # ПЕРЕЗАПИСЫВАЕМ файл отсортированным
-        os.makedirs(os.path.dirname(ooni_output), exist_ok=True)
-        with open(ooni_output, 'w', encoding='utf-8') as f:
-            for domain in sorted(all_domains):
-                f.write(domain + '\n')
-        
-        new_count = len(all_domains) - len(existing_domains)
-        print(f"OONI monthly update: +{new_count} new domains, total {len(all_domains)} in {ooni_output}")
-        if os.path.exists(csv_path):
-            os.remove(csv_path)
-        return list(all_domains)
+        print(f"OONI API: Found {len(ooni_domains)} active blocked domains this month.")
+        return ooni_domains
         
     except Exception as e:
-        print(f"OONI monthly download failed: {e}")
-        if os.path.exists(csv_path):
-            os.remove(csv_path)
+        print(f"OONI update failed: {e}")
         return []
 
 def download_domains(url):
@@ -215,6 +182,8 @@ def save_nftset_list(merged_domains, nfset_file):
 
 def main():
     out_dir = "domains"
+    src_dir = "src"
+
     os.makedirs(out_dir, exist_ok=True)
     
     remote_url = "https://raw.githubusercontent.com/1andrevich/Re-filter-lists/main/domains_all.lst"
@@ -226,7 +195,7 @@ def main():
     nfset_file = os.path.join(out_dir, "dnsmasq_domains.lst")
 
     print("Fetching OONI monthly confirmed list...")
-    ooni_domains = get_ooni_confirmed()
+    ooni_domains = get_ooni_confirmed(ooni_output)
     save_merged_list(ooni_domains, ooni_output)
 
     print("Downloading remote domain list...")
@@ -236,7 +205,8 @@ def main():
     local_domains = read_local_domains(blocked_file) + read_local_domains(restrict_file)
     
     print("Merging domain lists (OONI separate)...")
-    merged_domains = merge_lists(remote_domains, local_domains)
+    all_combined = set(ooni_domains) | set(remote_domains) | set(local_domains)
+    merged_domains = filter_subdomains(all_combined)
 
 
     print("Saving merged lists...")
