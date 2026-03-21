@@ -9,11 +9,15 @@ from idna import encode as idna_encode
 from io import BytesIO
 
 def normalize_domain(domain):
-    """Приводит к нижнему регистру, чистит пробелы, убирает www и конвертирует в Punycode."""
+    """Приводит к нижнему регистру, чистит пробелы, убирает порт, www и конвертирует в Punycode."""
     if pd.isna(domain) or domain is None:
         return None
-    domain = str(domain).lower().strip().removeprefix("www.")
-    # Обработка Punycode (IDNA)
+    
+    domain = str(domain).lower().strip()
+    if ":" in domain:
+        domain = domain.split(":")[0]
+        
+    domain = domain.removeprefix("www.")
     try:
         if any(ord(c) > 127 for c in domain):
             return idna_encode(domain).decode('utf-8')
@@ -51,11 +55,26 @@ def get_ooni_confirmed(ooni_output):
             ((df['anomaly_count'] > df['ok_count']) & (df['anomaly_count'] > 2))
         ]
         
-        ooni_domains = blocked_df['domain'].apply(normalize_domain).dropna().unique().tolist()
-        ooni_domains = [d for d in ooni_domains if d and '.' in d]
+        valid_ooni_domains = []
         
-        print(f"OONI API: Found {len(ooni_domains)} active blocked domains this month.")
-        return ooni_domains
+        for raw_domain in blocked_df['domain'].unique():
+            clean_d = normalize_domain(raw_domain)
+            if not clean_d or len(clean_d) < 4:
+                continue
+            ext = tldextract.extract(clean_d)
+            if not ext.domain or not ext.suffix:
+                continue
+            if not any(c.isalpha() for c in ext.domain):
+                continue
+            if ext.domain == 'www' and ext.suffix == 'com' and not ext.subdomain:
+                continue
+
+            valid_ooni_domains.append(clean_d)
+        
+        final_list = sorted(list(set(valid_ooni_domains)))
+        
+        print(f"OONI API: Found {len(final_list)} valid blocked domains.")
+        return final_list
         
     except Exception as e:
         print(f"OONI update failed: {e}")
