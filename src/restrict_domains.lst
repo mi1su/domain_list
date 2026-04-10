@@ -2,11 +2,9 @@
 ai-chat.bsg.brave.com
 ai.com
 aidemos.meta.com
-anthropic.com
 anythingllm.com
 chatfuel.com
 cici.com
-claude.ai
 elevenlabs.io
 fastflux.ai
 files.manus.cdn
@@ -14,6 +12,7 @@ genspark.ai
 geospy.ai
 grazie.ai
 grok.com
+grok.x.com
 groq.com
 hume.ai
 kaleido.ai
@@ -21,6 +20,7 @@ lenso.ai
 lightning.ai
 llamameta.net
 manus.im
+openrouter.ai
 recraft.ai
 reka.ai
 remove.bg
@@ -28,6 +28,14 @@ sam2.metademolab.com
 sora.com
 watermarkremover.io
 x.ai
+
+#Anthropic
+anthropic.com
+anthropic.qualtrics.com
+claude.ai
+claude.com
+downloads.intercomcdn.com
+intercom.io
 
 # google_ai
 aisandbox-pa.googleapis.com
@@ -140,6 +148,12 @@ notion.site
 notion.so
 
 # Google
+aida.googleapis.com
+antigravity-pa.googleapis.com
+antigravity-unleash.goog
+antigravity.google
+antigravity.googleapis.com
+firebaseinstallations.googleapis.com
 google.dev
 googletagmanager.com
 lookerstudio.google.com
@@ -147,6 +161,7 @@ news.google.com
 play.google.com
 play.googleapis.com
 robinfrontend-pa.googleapis.com
+speechs3proto2-pa.googleapis.com
 suggestqueries.google.com
 
 # Hashicorp
@@ -726,6 +741,7 @@ atwiki.jp
 augmentcode.com
 auth.hpe.com
 av-connection.com
+backend-v2.crixet.com
 bell-sw.com
 binaryedge.io
 bitcoin.org
@@ -753,6 +769,8 @@ contabo.com
 copernicus.eu
 cpu-monkey.com
 darkproject.eu
+dashboard.algolia.com
+dashboard.gitguardian.com
 data.cline.bot
 databricks.com
 datacamp.com
@@ -780,6 +798,7 @@ fast.com
 fiercepc.co.uk
 filebin.net
 findagrave.com
+fivetran.com
 fls.guru
 flyertalk.com
 forum.netgate.com
@@ -791,6 +810,8 @@ gateway.pinata.cloud
 global.fncstatic.com
 glpals.com
 gnome-look.org
+gofund.me
+gonift.com
 gov.ua
 gpu-monkey.com
 gql.twitch.tv
@@ -802,6 +823,7 @@ hchk.io
 home.by.me
 housebrand.com
 htmhell.dev
+httptoolkit.com
 humblebundle.com
 hyundainews.com
 idealista.com
@@ -820,6 +842,7 @@ keepgrowing.in
 klarna.com
 klaviyo.com
 kowalski7cc.xyz
+last.fm
 legalshield.com
 lgeapi.com
 lgthinq.com
@@ -837,6 +860,7 @@ matrix-client.matrix.org
 max.com
 me.meshcapade.com
 meest-shop.com
+meetup.com
 michaelkors.global
 microcenter.com
 militarnyi.com
@@ -845,6 +869,7 @@ mintmobile.com
 miracleptr.wordpress.com
 monster.ie
 mssg.me
+multisim.com
 myheritage.com
 myparallels.com
 myqrcode.com
@@ -858,13 +883,13 @@ neuesbad.de
 new.abb.com
 newsroom.porsche.com
 ngrok.community
+ni.com
 nordaccount.com
 nordcdn.com
 ntp.msn.com
 octopus.do
 openculture.com
 openh264.org
-openrouter.ai
 ottg.app
 paddle.com
 paddlestatus.com
@@ -879,12 +904,15 @@ penguin.com
 penguinrandomhouse.com
 pepephone.com
 peter-tanner.com
+philiascans.org
 pizzahut.com
 plugshare.com
 posthog.com
 primark.com
 profitwell.com
 public.parsec.app
+qodana.cloud
+qoder.com
 qwant.com
 raycast-releases.com
 readybot.io
@@ -900,7 +928,9 @@ sap.com
 sbom.sh
 scam-detector.com
 schenker-tech.de
+schneider-electric.com
 sdxcentral.com
+se.com
 seconddinnertech.com
 semrush.com
 sendy.jp
@@ -919,6 +949,7 @@ sqlshack.com
 stagescycling.com
 steganos.com
 stereophile.com
+streamable.com
 stuff.co.nz
 support.anydesk.com
 support.huawei.com
@@ -950,8 +981,10 @@ v.vrv.co
 varonis.com
 vehiclelifetimesolutions.schaeffler.com
 velocidrone.com
+verificationacademy.com
 vod-fy.crunchyrollcdn.com
 volet.com
+wbagora.com
 wbgames.com
 wccftech.com
 wdfiles.com
@@ -967,3 +1000,4 @@ wwnd.space
 x-minus.pro
 xfantazy.com
 xiaomi.eu
+xrite.com
