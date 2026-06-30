@@ -38,9 +38,15 @@ downloads.intercomcdn.com
 intercom.io
 
 # google_ai
+aida.googleapis.com
+antigravity-pa.googleapis.com
+antigravity-unleash.goog
+antigravity.google
+antigravity.googleapis.com
 bard.google.com
 deepmind.com
 deepmind.google
+firebaseinstallations.googleapis.com
 gemini.google
 gemini.google.com
 generativeai.google
@@ -49,13 +55,14 @@ labs.google
 makersuite.google.com
 notebooklm.google
 notebooklm.google.com
+robinfrontend-pa.googleapis.com
+speechs3proto2-pa.googleapis.com
 stitch.withgoogle.com
 
 #Copilot
 api.github.com
 copilot-proxy.githubusercontent.com
 copilot.githubusercontent.com
-githubcopilot.com
 
 # Github
 copilot.microsoft.com
@@ -97,8 +104,6 @@ tx.me
 usercontent.dev
 
 # Cybersecurity & Privacy
-app.zerossl.com
-bitdefender.com
 bits.avcdn.net
 certifytheweb.com
 cisecurity.org
@@ -131,6 +136,7 @@ tenable.com
 tria.ge
 vpnunlimited.com
 watchguard.com
+zerossl.com
 
 # Notion
 notion-emojis.s3-us-west-2.amazonaws.com
@@ -141,15 +147,9 @@ notion.site
 notion.so
 
 # Google
-aida.googleapis.com
 aisandbox-pa.googleapis.com
 aistudio.google.com
-antigravity-pa.googleapis.com
-antigravity-unleash.goog
-antigravity.google
-antigravity.googleapis.com
 clients6.google.com
-firebaseinstallations.googleapis.com
 geller-pa.googleapis.com
 google.dev
 googletagmanager.com
@@ -160,8 +160,6 @@ news.google.com
 play.google.com
 play.googleapis.com
 proactivebackend-pa.googleapis.com
-robinfrontend-pa.googleapis.com
-speechs3proto2-pa.googleapis.com
 suggestqueries.google.com
 
 # Hashicorp
@@ -181,6 +179,7 @@ api.app.prod.grazie.aws.intellij.net
 jetbrains.ai
 jetbrains.com
 jetbrains.space
+jetbrains.team
 myjetbrains.com
 youtrack.cloud
 
@@ -257,7 +256,6 @@ metopera.org
 mixcloud.com
 prowlarr.com
 radarr.video
-spotify.com
 tidal.com
 
 # Tik-tok
@@ -297,7 +295,6 @@ xtracloud.net
 # Amazon
 aws.amazon.com
 gaming.amazon.com
-primevideo.com
 
 # Design, photos and graphics
 adobe-identity.com
@@ -683,7 +680,6 @@ futurelearn.com
 getoutline.com
 grammarly.com
 itninja.com
-ldoceonline.com
 oclc.org
 pluralsight.com
 ratatype.com
@@ -783,6 +779,9 @@ contabo.com
 copernicus.eu
 cpu-monkey.com
 csagroup.org
+cursor-cdn.com
+cursor.sh
+cursorapi.com
 darkproject.eu
 dashboard.algolia.com
 dashboard.gitguardian.com
@@ -831,6 +830,11 @@ flyertalk.com
 forum.netgate.com
 fosshub.comfosshub.com
 foxnews.com
+framer.app
+framercanvas.com
+framercdn.com
+framerstatic.com
+framerusercontent.com
 freediscussions.com
 freescale.com
 fxnetworks.com
@@ -858,6 +862,7 @@ httptoolkit.com
 humblebundle.com
 hyundainews.com
 idealista.com
+iedb.org
 ikea.com
 imagecache365.com
 imgur.com
@@ -1088,6 +1093,8 @@ parallelsaccess.com
 paritydeals.com
 parts-express.com
 patreon.com
+patreonusercontent.com
+paywithmoon.com
 pcspecialist.co.uk
 pdfexpert.com
 penguin.com
@@ -1102,6 +1109,8 @@ posthog.com
 primark.com
 profitwell.com
 public.parsec.app
+pxl.to
+qobuz.com
 qodana.cloud
 qoder.com
 qwant.com
@@ -1130,9 +1139,12 @@ semrush.com
 sendy.jp
 sentry.dev
 servarr.com
+sharefile.com
+sharefile.io
 shopee.co.id
 shopee.tw
 showtime.com
+sigsauer.com
 siteground.com
 sites.prh.com
 skyshowtime.com
@@ -1145,6 +1157,7 @@ spitfireaudio.com
 sqlshack.com
 square.com
 stagescycling.com
+static.app
 steganos.com
 stereophile.com
 store.fastspring.com
@@ -1155,6 +1168,7 @@ support.huawei.com
 support.ruckuswireless.com
 swapd.co
 syncfusion.com
+syslog-ng.com
 talosintelligence.com
 techbargains.com
 technobezz.com
@@ -1191,6 +1205,7 @@ wbgames.com
 wccftech.com
 wdfiles.com
 we.tl
+web.archive.org
 wellfound.com
 wetransfer.com
 wheather.com
