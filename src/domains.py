@@ -119,7 +119,7 @@ def filter_subdomains(domains):
     for domain in domains:
         extracted = tldextract.extract(domain)
         if not extracted.domain and '.' not in extracted.suffix:
-            tld = "." + extracted.suffix
+            tld = extracted.suffix
             top_level_domains.add(tld)
             unique_domains.add(tld)
             continue
