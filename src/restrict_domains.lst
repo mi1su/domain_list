@@ -30,11 +30,12 @@ sora.com
 watermarkremover.io
 x.ai
 
-#Anthropic
+# Anthropic
 anthropic.com
 anthropic.qualtrics.com
 claude.ai
 claude.com
+claudeusercontent.com
 downloads.intercomcdn.com
 intercom.io
 
@@ -60,7 +61,7 @@ robinfrontend-pa.googleapis.com
 speechs3proto2-pa.googleapis.com
 stitch.withgoogle.com
 
-#Copilot
+# Copilot
 api.github.com
 copilot-proxy.githubusercontent.com
 copilot.githubusercontent.com
@@ -71,8 +72,10 @@ vscode-auth.github.com
 
 # OpenAI
 chat.com
+chatgpt-team.site
 chatgpt.com
 chatgpt.livekit.cloud
+chatgpt.site
 oaistatic.com
 oaiusercontent.com
 openai.com
@@ -82,27 +85,6 @@ openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 openaicom.imgix.net
 openaicomproductionae4b.blob.core.windows.net
 production-openaicom-storage.azureedge.net
-
-# Telegram
-cdn-telegram.org
-comments.app
-contest.com
-fragment.com
-graph.org
-quiz.directory
-t.me
-tdesktop.com
-telega.one
-telegra.ph
-telegram-cdn.org
-telegram.dog
-telegram.me
-telegram.org
-telegram.space
-telesco.pe
-tg.dev
-tx.me
-usercontent.dev
 
 # Cybersecurity & Privacy
 bits.avcdn.net
@@ -178,6 +160,7 @@ tmdb.org
 # Jetbrains
 api.app.prod.grazie.aws.intellij.net
 jetbrains.ai
+jetbrains.cloud
 jetbrains.com
 jetbrains.space
 jetbrains.team
@@ -296,6 +279,7 @@ xtracloud.net
 # Amazon
 aws.amazon.com
 gaming.amazon.com
+primevideo.com
 
 # Design, photos and graphics
 adobe-identity.com
@@ -708,6 +692,39 @@ nba.com
 nfl.com
 premierleague.com
 
+# Nintendo
+marioandluigidreamteam.com
+mariobroswii.com
+mariokart.cn
+mariokart.com.cn
+mariokart7.com
+mariokart8.com
+mariosupersluggers.com
+newsupermariobrosu.com
+playnintendo.com
+pokedex3d.com
+pokemon-moon.com
+pokemon-sun.com
+pokemon-sunmoon.com
+pokemon.com
+pokemonbank.com
+pokemonblackwhite.com
+pokemonbw.com
+pokemonchampionships.com
+pokemongoldsilver.com
+pokemonhome.com
+pokemonletsgoeevee.com
+pokemonletsgopikachu.com
+pokemonmysterydungeon.com
+pokemonpicross.com
+pokemonplatinum.com
+pokemonrubysapphire.com
+pokemonsunmoon.com
+pokemonswordshield.com
+pokemonultrasunmoon.com
+pokemonvgc.com
+pokemonwifi.net
+
 # Other
 2407.pl
 3parug.com
@@ -716,8 +733,10 @@ premierleague.com
 6pm.com
 8chan.moe
 a-vrv.akamaized.net
+aave.com
 account.templatemonster.com
 adtran.com
+advantech.com
 affinity.studio
 aftermarket.zf.com
 ahrefs.com
@@ -737,16 +756,23 @@ arc.net
 arduino.cc
 att.com
 atwiki.jp
+audioscrobbler.com
 augmentcode.com
 auth.hpe.com
 av-connection.com
+avast.com
+avast.ru
 avid.com
+axiomtek.com
 backend-v2.crixet.com
+basecamp.com
+basecampapi.com
 bell-sw.com
 bestbuy.ca
 binaryedge.io
 bitcoin.org
 bitnami.com
+bizjournals.com
 bluesky-soft.com
 bmc.com
 bmc.okta.com
@@ -766,8 +792,12 @@ cacti.net
 cadence.com
 cats.com
 census.gov
+cgtrader.com
 chainreactioncycles.com
 chipestimate.com
+clau.de
+claudemcpclient.com
+claudemcpcontent.com
 clip.opus.pro
 cloud.webscraper.io
 cmems-du.eu
@@ -779,9 +809,12 @@ completeaccess.audio
 connect.ngrok-agent.com
 contabo.com
 copernicus.eu
+corecode.io
+coreweave.com
 coursera.com
 cpu-monkey.com
 csagroup.org
+cuny.edu
 cursor-cdn.com
 cursor.sh
 cursorapi.com
@@ -798,12 +831,65 @@ desipro.de
 diabrowser.com
 dice.com
 digikey.sg
+digikeyassets.com
+dinamicagenerale.com
 disneyplus.com
 docker.com
 document360.com
 document360.io
 dogpile.com
+dola.com
 dolby.com
+downloads.imazing.com
+dyson.ae
+dyson.at
+dyson.be
+dyson.ca
+dyson.ch
+dyson.cn
+dyson.co.il
+dyson.co.jp
+dyson.co.kr
+dyson.co.nz
+dyson.co.th
+dyson.co.uk
+dyson.co.za
+dyson.com.ar
+dyson.com.au
+dyson.com.br
+dyson.com.ee
+dyson.com.kh
+dyson.com.ro
+dyson.com.sg
+dyson.com.tr
+dyson.cz
+dyson.de
+dyson.dk
+dyson.ee
+dyson.es
+dyson.fi
+dyson.fr
+dyson.gr
+dyson.hk
+dyson.hu
+dyson.ie
+dyson.in
+dyson.it
+dyson.jp
+dyson.lt
+dyson.ma
+dyson.mx
+dyson.my
+dyson.no
+dyson.ph
+dyson.pl
+dyson.pt
+dyson.sa
+dyson.tw
+dyson.us
+dyson.vn
+dysoncanada.ca
+dysonrecall.com
 e-hentai.org
 e-katalog.com.ua
 e-katalog.ua
@@ -814,10 +900,17 @@ editmysite.com
 editorx.com
 ek.ua
 elements.envato.com
+elevenreader.io
+elgato.com
 eneba.com
 engagor.com
+enscape3d.com
 entrust.com
+esfr.pl
 espares.ie
+espares.it
+euro.com.pl
+evike.com
 exchanger.bits.media
 expandrive.com
 extremetech.com
@@ -847,7 +940,11 @@ freescale.com
 fxnetworks.com
 g711.org
 gallery.zetalliance.org
+game-info.wiki
+game8.co
 gateway.pinata.cloud
+glassdoor.com
+glassdoor.de
 global.fncstatic.com
 glpals.com
 gmplib.org
@@ -859,7 +956,9 @@ gonift.com
 gov.ua
 gpu-monkey.com
 gql.twitch.tv
+griesslehner.at
 grizzlysms.com
+guidedhacking.com
 haydaygame.com
 hbomax.com
 hc-ping.com
@@ -1026,6 +1125,7 @@ intel.yt
 intellipaat.com
 intercity.pl
 intuit.com
+ioactive.com
 iperf3serverlist.net
 issuu.com
 itdog.info
@@ -1042,6 +1142,8 @@ lego.com
 lgeapi.com
 lgthinq.com
 lifehacker.com
+linear.app
+linguee.com
 liquidsky.com
 logo.com
 londonstockexchange.com
@@ -1051,13 +1153,19 @@ macvendors.com
 mailchi.mp
 mailerlite.com
 mailinator.com
+make.com
+makita.co.nz
+makitalatinamerica.com
 manybooks.net
 marvelsnap.com
 matrix-client.matrix.org
 max.com
 me.meshcapade.com
+mediaexpert.pl
+mediamarkt.pl
 meest-shop.com
 meetup.com
+megazakaz.com
 meta.ai
 metacrawler.com
 michaelkors.global
@@ -1067,6 +1175,12 @@ militarnyi.com
 mint.com
 mintmobile.com
 miracleptr.wordpress.com
+miro.com
+miromind.ai
+mmst.eu
+modivo.cloud
+modivo.pl
+monica.im
 monster.ie
 mssg.me
 multisim.com
@@ -1076,8 +1190,12 @@ myqrcode.com
 myrotvorets.center
 myworld-portal.leica-geosystems.com
 myworld.leica-geosystems.com
+n8n.cloud
 nab.com.au
+naukimg.com
+naukri.com
 neo4j.com
+neon.tech
 netacad.com
 netapp.com
 netscaler.com
@@ -1087,12 +1205,15 @@ newsroom.porsche.com
 ngrok.community
 ni.com
 nic.ua
+ninjaone.com
 nordaccount.com
 nordcdn.com
 nsa.gov
 ntfsformac.tuxera.com
 ntp.msn.com
 nvidianews.nvidia.com
+octanorm.com
+octanorm.expo.shop
 octopus.do
 openculture.com
 openh264.org
@@ -1123,6 +1244,7 @@ pi.ai
 pizzahut.com
 plugshare.com
 posthog.com
+powertoolsuk.co.uk
 primark.com
 profitwell.com
 public.parsec.app
@@ -1135,20 +1257,24 @@ raycast-releases.com
 readybot.io
 redislabs.com
 refactoring.guru
+reims-vgpu.com
 remna.st
 replicate.com
 restream.io
 reve.art
+reve.com
 ribbonsoft.com
 ripcordchat.onfastspring.com
 rocketsoftware.com
 rockthejvm.com
+romsgames.net
 sans.edu
 sap.com
 sbom.sh
 scam-detector.com
 schenker-tech.de
 schneider-electric.com
+scribd.com
 sdxcentral.com
 se.com
 seagate.com
@@ -1172,6 +1298,7 @@ snapgametech.com
 snapgene.com
 socradar.io
 sonara.ai
+sonatype.com
 spirit-of-metal.com
 spitfireaudio.com
 sqlshack.com
@@ -1184,6 +1311,8 @@ store.fastspring.com
 store.solidstatelogic.com
 streamable.com
 stuff.co.nz
+superpharm.eu
+superpharm.pl
 support.anydesk.com
 support.huawei.com
 support.ruckuswireless.com
@@ -1205,6 +1334,7 @@ trace.wrs.com
 trae.ai
 transferwise.com
 trueachievements.com
+trybendy.app
 tsheets.com
 tutanota.com
 tvn24.pl
@@ -1232,17 +1362,21 @@ web.archive.org
 wellfound.com
 wetransfer.com
 wheather.com
+whimsical.com
 widgetapp.stream
 windsurf.com
 wise.com
+wix.com
 wk.cz
 wwnd.space
 x-minus.pro
+xda-developers.com
 xdaforums.com
 xenserver.com
 xfantazy.com
 xiaomi.eu
 xrite.com
 yithemes.comxrite.com
+zapier-deployment.com
 zomato.com
 zomato.comxrite.com
